@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>LOGIN</h1>
+        </div>
+        <div class="login-form">
+            <h1>Entrar</h1>
+            <form action="#" method="post" id="login-form">
+                <div class="input-group">
+                    <label for="email">Email ou Telefone</label>
+                    <input type="text" id="email" name="email" placeholder="Email ou telefone" required
+                        oninput="onchangeEmail()">
+                    <div class="error" id="email-error">Email obrigatório</div>
+                    <div class="error" id="email-invalid">Email inválido</div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" placeholder="Senha"
+                        oninput="onchangePassword()">
+                    <div class="error" id="password-error">Senha obrigatória</div>
+                </div>
+                <button type="submit" class="enter" id="enter" disabled onclick="login()">Entrar</button>
+            </form>
+            <div class="links">
+                <a href="#">Esqueceu a senha?</a>
+                <a href="register.html">Criar nova conta</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/validations.js"></script>
+</body>
+
+</html>
