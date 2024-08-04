@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/register.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="register">
+        <h1>Cadastro</h1>
+        <form action="#" method="post" id="form-register">
+            <label for="Name">Nome</label>
+            <input type="text" name="name" id="register-name">
+            <div class="error">Esse campo precisa ser preenchido</div>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="register-email" oninput="onchangeEmail()">
+            <div class="error">Esse campo precisa ser preenchido</div>
+
+            <label for="age">Data de nascimento</label>
+            <input type="date" name="age" id="register-age">
+            <div class="error">Esse campo precisa ser preenchido</div>
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="register-password" oninput="onchangePassword()">
+            <div class="error" id="passwordError">Esse campo precisa ser preenchido</div>
+
+            <label for="passwordC">Confirmar senha</label>
+            <input type="password" name="passwordC" id="passwordC">
+            <div class="errorPassword">As senhas precisam ser iguais</div>
+
+            <button type="submit" id="enter" disabled=true>Cadastrar</button>
+            <a href="index.html">Ja possui cadastro?</a>
+
+        </form>
+    </div>
+    <script src="js/register.js"></script>
+    <script src="js/validations.js"></script>
+</body>
+
+</html>

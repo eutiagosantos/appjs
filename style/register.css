@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.register {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.register h1 {
+    margin-bottom: 20px;
+    color: #1877F2;
+}
+
+.register label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.register input[type="text"],
+.register input[type="email"],
+.register input[type="date"],
+.register input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.register input[type="text"]:focus,
+.register input[type="email"]:focus,
+.register input[type="date"]:focus,
+.register input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#form-register {
+    display: flex;
+    flex-direction: column;
+}
+
+.register input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+button[disabled] {
+    opacity: 0.7;
+}
+
+.error,
+.errorPassword {
+    display: none;
+    color: red;
+}
+
+a {
+    display: block;
+    color: #1877F2;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
