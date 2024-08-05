@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
+
     function toggleEmailError() {
         const email = form.email().value;
 
@@ -65,3 +66,8 @@ document.addEventListener("DOMContentLoaded", function () {
         toggleButtonsDisabled();
     });
 });
+
+document.getElementById('form-register').addEventListener('submit', (event) => {
+    event.preventDefault()
+    window.location.href = 'home.html'
+})
